@@ -268,6 +268,8 @@ input[type=text], input[type=password] {
   .containerhome {
     position: relative;
     top: 0em;
+    width: 60%;
+    margin-left: 20%;
   }
   .mySlides img{
     height: 25em;
