@@ -178,7 +178,9 @@ html{
   <a href="#about" title="Abo turibo & nibyo dukora">About Us</a>
 
   <a href="#contactUs" title="Mushobora kutwandikira munyuze hano">Contact Us</a>
-  <a href="#" title="Abo turibo & nibyo dukora">sell-car</a>
+  <a href="#" title="Abo turibo & nibyo dukora"></a>
+  <a href="#home" onclick="document.getElementById('id03').style.display='block'" style="width:auto;">sell-car</a>
+
 
   <label>
   <div id="google_translate_element"></div>
@@ -221,12 +223,12 @@ html{
   
     <div class="mySlides">
       <div class="numbertext">5 / 5</div>
-      <img src="5.jpg" style="width:100%">
+      <img src=".jpg" style="width:100%">
     </div>
       
     <!-- <div class="mySlides">
       <div class="numbertext">6 / 6</div>
-      <img src="img_snow_wide.jpg" style="width:100%">
+      <img src="img/img_snow_wide.jpg" style="width:100%">
     </div> -->
       
     <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -268,25 +270,26 @@ html{
 
  <br><br><br><br><br><br><br><br>
 <div class="qoranpage" id="other_cars">
+
 <table class="othe_cars">
   <tr>
-    <td><img src="1.jpg"><label>buy</label> 
+    <td><img src="image/1.jpg"><label>buy</label> 
        <div class="overlay">
       <div class="text">Hello World</div>
     </div></td>
-    <td><img src="2.jpg"><label>buy</label></td>
-    <td><img src="3.jpg"><label>buy</label></td>
-    <td><img src="5.jpg"><label>buy</label></td>
-    <td><img src="1.jpg"><label>buy</label></td>
-    <td><img src="1.jpg"><label>buy</label></td>
+    <td><img src="2.jpg"><label> <a href="">buy</a> </label></td>
+    <td><img src="3.jpg"><label> <a href="">buy</a></label></td>
+    <td><img src="5.jpg"><label> <a href="">buy</a></label></td>
+    <td><img src="1.jpg"><label> <a href="">buy</a></label></td>
+    <td><img src="1.jpg"><label> <a href="">buy</a></label></td>
   </tr>
   <tr>
-    <td><img src="2.jpg"><label>buy</label></td>
-    <td><img src="3.jpg"><label>buy</label></td>
-    <td><img src="5.jpg"><label>buy</label></td>
-    <td><img src="1.jpg"><label>buy</label></td>
-    <td><img src="1.jpg"><label>buy</label></td>
-    <td><img src="1.jpg"><label>buy</label></td>
+    <td><img src="2.jpg"><label> <a href="">buy</a></label></td>
+    <td><img src="3.jpg"><label> <a href="">buy</a></label></td>
+    <td><img src="5.jpg"><label> <a href="">buy</a></label></td>
+    <td><img src="1.jpg"><label> <a href="">buy</a></label></td>
+    <td><img src="1.jpg"><label> <a href="">buy</a></label></td>
+    <td><img src="1.jpg"><label> <a href="">buy</a></label></td>
     
   </tr>
 
@@ -396,6 +399,39 @@ uhiufhsdifhighjijgifhoid
   
         <label for="psw-repeat"><b>Repeat Password</b></label>
         <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+        
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+  
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+  
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+
+
+  <div id="id03" class="modal1">
+    <!-- <span onclick="document.getElementById('id02').style.display='none'" class="close1" title="Close Modal">&times;</span> -->
+    <form class="modal-content animate" action="https://www.w3schools.com/action_page.php">
+      <div class="container">
+        <h1>Fill Details of your car</h1>
+        <p>Sell here</p>
+        <hr>
+        <label for="email"><b>Bland</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+  
+        <label for="psw"><b>model</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+  
+        <label for="psw-repeat"><b>year</b></label>
+        <input type="date"  name="psw-repeat" required>
         
         <label>
           <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
