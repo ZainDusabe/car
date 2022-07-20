@@ -52,11 +52,7 @@ html{
   /* background-color: aqua; */
   /* width: 400px; */
   height: 100%;
-  margin-top: -2rem;
-}
-
-
-
+  }
 
 
 .qoranpage{
@@ -134,7 +130,7 @@ html{
  .othe_cars a{
   text-decoration: none;
      color: white;
-     font-size: 2rem;
+     font-size: 1.5rem;
      font-weight: bold;
 
 } 
@@ -175,6 +171,27 @@ html{
 }
 
 </style>
+
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}
+.signbtn{
+  width: 10%;
+  height: 2%;
+  text-align: center;
+  float: right;
+  }
+  </style>
+
 <link rel="stylesheet" type="text/css" href="css.css">
 </head>
 <body>
@@ -285,24 +302,14 @@ html{
 
 <table class="othe_cars">
   <tr>
-    <td><img src="1.jpg"><label><a href="">buy</a></label> 
-       <div class="overlay">
-      <div class="text">Hello World</div>
-    </div></td>
-    <td><img src="2.jpg"><label> <a href="">buy</a> </label></td>
-    <td><img src="3.jpg"><label> <a href="">buy</a></label></td>
-    <td><img src="5.jpg"><label> <a href="">buy</a></label></td>
-    <td><img src="1.jpg"><label> <a href="">buy</a></label></td>
-    <td><img src="1.jpg"><label> <a href="">buy</a></label></td>
-  </tr>
-  <tr>
-    <td><img src="2.jpg"><label> <a href="">buy</a></label></td>
-    <td><img src="3.jpg"><label> <a href="">buy</a></label></td>
-    <td><img src="5.jpg"><label> <a href="">buy</a></label></td>
-    <td><img src="1.jpg"><label> <a href="">buy</a></label></td>
-    <td><img src="1.jpg"><label> <a href="">buy</a></label></td>
-    <td><img src="1.jpg"><label> <a href="">buy</a></label></td>
-    
+    <td><img src="1.jpg"><a href="#id04" onclick="document.getElementById('id04').style.display='block'" style="width:auto;">Details</a></td>
+    <td><img src="2.jpg"><a href="#id05" onclick="document.getElementById('id05').style.display='block'" style="width:auto;">Details</a></td>
+    <td><img src="3.jpg"><a href="#id06" onclick="document.getElementById('id06').style.display='block'" style="width:auto;">Details</a></td>
+    </tr>
+    <tr>
+    <td><img src="5.jpg"><a href="#id07" onclick="document.getElementById('id07').style.display='block'" style="width:auto;">Details</a></td>
+    <td><img src="1.jpg"><a href="#id08" onclick="document.getElementById('id08').style.display='block'" style="width:auto;">Details</a></td>
+    <td><img src="1.jpg"><a href="#id09" onclick="document.getElementById('id09').style.display='block'" style="width:auto;">Details</a></td>
   </tr>
 
 </table>
@@ -358,7 +365,9 @@ uhiufhsdifhighjijgifhoid
 
 
 
+<div class="qoranpage" id="other_cars1">
 
+</div>
 
 
 
@@ -462,6 +471,190 @@ uhiufhsdifhighjijgifhoid
       </div>
     </form>
   </div>
+
+
+  <!-- Details for car buying -->
+
+
+  <div id="id04" class="modal1">
+    <!-- <span onclick="document.getElementById('id02').style.display='none'" class="close1" title="Close Modal">&times;</span> -->
+    <form class="modal-content animate" action="https://www.w3schools.com/action_page.php">
+      <div class="container">
+        <h1>Details about the car of your choice</h1>
+        <hr>
+                  
+          <table>
+            <tr>
+            <td>TOYOTA<br>
+            Carina(second hand)<br>
+          <br>
+          
+            Description about the car<br>
+                TOYOTA Carina 2001
+          
+          </td>
+            <td>$2000</td>
+            </tr>
+          </table>
+
+  
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id04').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signbtn">Buy</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div id="id05" class="modal1">
+    <!-- <span onclick="document.getElementById('id02').style.display='none'" class="close1" title="Close Modal">&times;</span> -->
+    <form class="modal-content animate" action="https://www.w3schools.com/action_page.php">
+      <div class="container">
+        <h1>Details about the car of your choice</h1>
+        <hr>
+                  
+          <table>
+            <tr>
+            <td>HYUNDAI<br>
+            Tucsan(Brand new)<br>
+          <br>
+          
+            Description about the car<br>
+                HYUNDAI Tucsan 2015
+          
+          </td>
+            <td>$10000</td>
+            </tr>
+          </table>
+
+  
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id05').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signbtn">Buy</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div id="id06" class="modal1">
+    <!-- <span onclick="document.getElementById('id02').style.display='none'" class="close1" title="Close Modal">&times;</span> -->
+    <form class="modal-content animate" action="https://www.w3schools.com/action_page.php">
+      <div class="container">
+        <h1>Details about the car of your choice</h1>
+        <hr>
+                  
+          <table>
+            <tr>
+            <td>HYUNDAI<br>
+            SantaFee(Brand new)<br>
+          <br>
+          
+            Description about the car<br>
+                HYUNDAI SantaFee 2014
+          
+          </td>
+            <td>$8000</td>
+            </tr>
+          </table>
+
+  
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id06').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signbtn">Buy</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div id="id07" class="modal1">
+    <!-- <span onclick="document.getElementById('id02').style.display='none'" class="close1" title="Close Modal">&times;</span> -->
+    <form class="modal-content animate" action="https://www.w3schools.com/action_page.php">
+      <div class="container">
+        <h1>Details about the car of your choice</h1>
+        <hr>
+                  
+          <table>
+            <tr>
+            <td>Mercedes-Benz<br>
+            C500(Brand new)<br>
+          <br>
+          
+            Description about the car<br>
+                Mercedes-Benz C500 2018
+          
+          </td>
+            <td>$15000</td>
+            </tr>
+          </table>
+
+  
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id07').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signbtn">Buy</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+  <div id="id08" class="modal1">
+    <!-- <span onclick="document.getElementById('id02').style.display='none'" class="close1" title="Close Modal">&times;</span> -->
+    <form class="modal-content animate" action="https://www.w3schools.com/action_page.php">
+      <div class="container">
+        <h1>Details about the car of your choice</h1>
+        <hr>
+                  
+          <table>
+            <tr>
+            <td>Ford<br>
+            SUV(Brand new)<br>
+          <br>
+          
+            Description about the car<br>
+                Ford SUV 2015
+          
+          </td>
+            <td>$9000</td>
+            </tr>
+          </table>
+
+  
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id08').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signbtn">Buy</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+  <div id="id09" class="modal1">
+    <!-- <span onclick="document.getElementById('id02').style.display='none'" class="close1" title="Close Modal">&times;</span> -->
+    <form class="modal-content animate" action="https://www.w3schools.com/action_page.php">
+      <div class="container">
+        <h1>Details about the car of your choice</h1>
+        <hr>
+                  
+          <table>
+            <tr>
+            <td>TOYOTA<br>
+            RAV4 LE(Brand new)<br>
+          <br>
+          
+            Description about the car<br>
+                TOYOTA RAV4 LE 2015
+          
+          </td>
+            <td>$20000</td>
+            </tr>
+          </table>
+
+  
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id09').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signbtn">Buy</button>
+        </div>
+      </div>
+    </form>
+  </div>
   
 
 
@@ -504,6 +697,79 @@ uhiufhsdifhighjijgifhoid
           }
       }
       </script>
+
+      <script>
+        // Get the modal
+        var modal1 = document.getElementById('id04');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal1) {
+                modal1.style.display = "none";
+            }
+        }
+        </script>
+
+        <script>
+          // Get the modal
+          var modal1 = document.getElementById('id05');
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal1) {
+                  modal1.style.display = "none";
+              }
+          }
+          </script>
+
+          <script>
+            // Get the modal
+            var modal1 = document.getElementById('id06');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal1) {
+                    modal1.style.display = "none";
+                }
+            }
+            </script>
+
+            <script>
+              // Get the modal
+              var modal1 = document.getElementById('id07');
+              
+              // When the user clicks anywhere outside of the modal, close it
+              window.onclick = function(event) {
+                  if (event.target == modal1) {
+                      modal1.style.display = "none";
+                  }
+              }
+              </script>
+
+              <script>
+                // Get the modal
+                var modal1 = document.getElementById('id08');
+                
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modal1) {
+                        modal1.style.display = "none";
+                    }
+                }
+                </script>
+
+
+                <script>
+                  // Get the modal
+                  var modal1 = document.getElementById('id09');
+                  
+                  // When the user clicks anywhere outside of the modal, close it
+                  window.onclick = function(event) {
+                      if (event.target == modal1) {
+                          modal1.style.display = "none";
+                      }
+                  }
+                  </script>
 
 
 <!-- JS for home pictures -->
