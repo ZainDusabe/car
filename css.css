@@ -267,7 +267,7 @@ input[type=text], input[type=password] {
   /* Position the image container (needed to position the left and right arrows) */
   .containerhome {
     position: relative;
-    top: 3em;
+    top: 0em;
   }
   .mySlides img{
     height: 25em;
