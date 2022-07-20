@@ -17,7 +17,7 @@ html{
   overflow: hidden;
   width: 100%;
   top: 0;
-  background-color: #0269bd;
+  background-color: #0eacd3;
   position: fixed;
   z-index: 1000 ;
   
@@ -40,7 +40,7 @@ html{
 }
 
 .topnav a.active {
-  background-image: linear-gradient(to right,rgb(17, 139, 170),#0269bd);
+  background-image: linear-gradient(to right,rgb(13, 140, 172),#0eacd3);
   color:#ffffff;
   font-weight: bold;
   font-size: 20px;
@@ -114,6 +114,57 @@ html{
   height: 100%;
 }
 
+.othe_cars{
+  width: 100%;
+  max-width: 1000px;
+  min-width: none;
+  margin-top: 10%;
+  margin-left: 15%;
+  text-align: center;
+}
+.othe_cars td{
+  height: 50%;
+}
+.othe_cars img{
+  width: 100%;
+  height: 13rem;
+
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.overlay:hover {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 </style>
 <link rel="stylesheet" type="text/css" href="css.css">
@@ -125,7 +176,10 @@ html{
   <a class="active" href="#">Car Dealer Group |</a>
   <a href="#home" title="Ahabanza">Home</a>
   <a href="#about" title="Abo turibo & nibyo dukora">About Us</a>
+
   <a href="#contactUs" title="Mushobora kutwandikira munyuze hano">Contact Us</a>
+  <a href="#" title="Abo turibo & nibyo dukora">sell-car</a>
+
   <label>
   <div id="google_translate_element"></div>
   <script> 
@@ -147,32 +201,32 @@ html{
 <div class="containerhome" id="home">
     <div class="mySlides">
       <div class="numbertext">1 / 5</div>
-      <img src="1.jpg" style="width:100%">
+      <img src="image/1.jpg" style="width:100%">
     </div>
   
     <div class="mySlides">
       <div class="numbertext">2 / 5</div>
-      <img src="2.jpg" style="width:100%">
+      <img src="image/2.jpg" style="width:100%">
     </div>
   
     <div class="mySlides">
       <div class="numbertext">3 / 5</div>
-      <img src="3.jpg" style="width:100%">
+      <img src="image/3.jpg" style="width:100%">
     </div>
       
     <div class="mySlides">
       <div class="numbertext">4 / 5</div>
-      <img src="4.jpg" style="width:100%">
+      <img src="image/4.jpg" style="width:100%">
     </div>
   
     <div class="mySlides">
       <div class="numbertext">5 / 5</div>
-      <img src="5.jpg" style="width:100%">
+      <img src="image/5.jpg" style="width:100%">
     </div>
       
     <!-- <div class="mySlides">
       <div class="numbertext">6 / 6</div>
-      <img src="img_snow_wide.jpg" style="width:100%">
+      <img src="img/img_snow_wide.jpg" style="width:100%">
     </div> -->
       
     <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -184,19 +238,19 @@ html{
   
     <div class="row">
       <div class="column">
-        <img class="demo cursor" src="1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+        <img class="demo cursor" src="image/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
       </div>
       <div class="column">
-        <img class="demo cursor" src="2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+        <img class="demo cursor" src="image/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
       </div>
       <div class="column">
-        <img class="demo cursor" src="3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+        <img class="demo cursor" src="image/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
       </div>
       <div class="column">
-        <img class="demo cursor" src="4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+        <img class="demo cursor" src="image/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
       </div>
       <div class="column">
-        <img class="demo cursor" src="5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+        <img class="demo cursor" src="image/5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
       </div>    
 
     </div>
@@ -212,11 +266,34 @@ html{
 
 <!--  KOR'ANI PART -->
 
-<!-- <br><br><br><br>
-<div class="qoranpage" id="qoranpage">
-uhiufhsdifhighjijgifhoid
-</div>
+ <br><br><br><br><br><br><br><br>
+<div class="qoranpage" id="other_cars">
 
+<table class="othe_cars">
+  <tr>
+    <td><img src="image/1.jpg"><label>buy</label> 
+       <div class="overlay">
+      <div class="text">Hello World</div>
+    </div></td>
+    <td><img src="image/2.jpg"><label>buy</label></td>
+    <td><img src="image/3.jpg"><label>buy</label></td>
+    <td><img src="image/5.jpg"><label>buy</label></td>
+    <td><img src="image/1.jpg"><label>buy</label></td>
+    <td><img src="image/1.jpg"><label>buy</label></td>
+  </tr>
+  <tr>
+    <td><img src="image/1.jpg"><label>buy</label></td>
+    <td><img src="image/1.jpg"><label>buy</label></td>
+    <td><img src="image/1.jpg"><label>buy</label></td>
+    <td><img src="image/1.jpg"><label>buy</label></td>
+    <td><img src="image/1.jpg"><label>buy</label></td>
+    <td><img src="image/1.jpg"><label>buy</label></td>
+    
+  </tr>
+
+</table>
+</div>
+<!--
 <br><br><br><br>
 <div class="dawa" id="dawa">
 uhiufhsdifhighjijgifhoid
